@@ -34,3 +34,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# env for prisma これやらないとパスワード見られるけど，これやらないとデプロイしたあとprismaが使えない？
+.env
+
