@@ -20,8 +20,8 @@ export default function Home() {
   ];
   return (
     <Wrapper>
-      <Title content="ようこそpipeへ" />
-      <ParaContainer>
+      <Title content="現在開発中です．．．" />
+      {/* <ParaContainer>
         <SubTitle>pipeって？</SubTitle>
         <TextCenter>計画をシェアするアプリです．</TextCenter>
       </ParaContainer>
@@ -34,7 +34,7 @@ export default function Home() {
             </li>
           ))}
         </ul>
-      </ParaContainer>
+      </ParaContainer> */}
     </Wrapper>
   );
 }
