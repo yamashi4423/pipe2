@@ -48,6 +48,7 @@ function Signin() {
         </Form>
       </Container>
       <div>
+        <>Googleでログイン</>
         <Auth />
       </div>
     </Wrapper>
