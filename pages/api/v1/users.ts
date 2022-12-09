@@ -21,7 +21,8 @@ export default async function handler(
       }
     case "POST":
       try {
-        const { name, email, password }: PostProps = req.body;
+        const { name, email, password } = JSON.parse(req.body); // JSON をオブジェクトに変換
+        // console.log("name:", name, "email:", email, "password", password);
         const user = await prisma.user.create({
           data: {
             name: name,
@@ -31,7 +32,8 @@ export default async function handler(
         });
         res.status(200).json({ user });
       } catch (err) {
-        res.status(500).json({ err });
+        console.log(err);
+        res.status(500).json({ message: "CANT CREATE USER" });
       }
   }
 }

@@ -22,9 +22,7 @@ function Layout({ children }: any) {
       <HeaderWrapper>
         <Header />
       </HeaderWrapper>
-      <MainWrapper>
-        <main>{children}</main>
-      </MainWrapper>
+      <MainWrapper>{children}</MainWrapper>
     </Wrapper>
   );
 }
