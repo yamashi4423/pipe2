@@ -29,7 +29,7 @@ const EmailInput = styled.input``;
 const PasswordInput = styled.input``;
 const Button = styled.button``;
 
-function signup() {
+function Signup() {
   const { users, setUsers } = useContext(AppContext);
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -86,4 +86,4 @@ function signup() {
   );
 }
 
-export default signup;
+export default Signup;

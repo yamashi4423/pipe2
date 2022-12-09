@@ -20,7 +20,7 @@ const EmailInput = styled.input``;
 const PasswordInput = styled.input``;
 const Button = styled.button``;
 
-function signin() {
+function Signin() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
@@ -50,4 +50,4 @@ function signin() {
   );
 }
 
-export default signin;
+export default Signin;
