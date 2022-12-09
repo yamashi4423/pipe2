@@ -1,5 +1,6 @@
 import styled from "@emotion/styled";
 import React, { useState } from "react";
+import Auth from "../components/auth";
 import Title from "../components/title";
 
 const Wrapper = styled.div`
@@ -46,6 +47,9 @@ function Signin() {
           <Button>+</Button>
         </Form>
       </Container>
+      <div>
+        <Auth />
+      </div>
     </Wrapper>
   );
 }
